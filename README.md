@@ -1,16 +1,16 @@
 # A-B-test-of-game-with-cookie-cats
 A/B testing projects and data analysis portfolio
 
-# 🎮 A/B Testing Analysis - Cookie Cats 
+# A/B Testing Analysis - Cookie Cats 
 
-## 📌 Описание проекта
+## Описание проекта
 
 Анализ A/B теста для мобильной игры **Cookie Cats**.  
 Сравнение двух версий игры с **гейтом на уровне 30** (gate_30) и **гейтом на уровне 40** (gate_40).
 
 **Цель:** Определить, какая версия лучше удерживает игроков и не снижает игровую активность.
 
-## 📊 Данные
+## Данные
 
 - **Источник:** [Kaggle - Mobile Games A/B Testing](https://www.kaggle.com/datasets/yufengsui/mobile-games-ab-testing)
 - **Размер выборки:** 90,189 пользователей
@@ -34,7 +34,7 @@ A/B testing projects and data analysis portfolio
 
 ---
 
-## 🔬 Методология
+## Методология
 
 ### Проверка нормальности
 - Распределение `sum_gamerounds` **НЕ нормальное** 
@@ -44,19 +44,19 @@ A/B testing projects and data analysis portfolio
 
 | Метрика | Тип данных | Тест | Результат |
 |---------|-----------|------|-----------|
-| **Retention** | Бинарные (0/1) | Хи-квадрат | ✅ Значимо |
-| **Game rounds** | Непрерывные (скошенные) | t-test | ❌ Не значимо |
+| **Retention** | Бинарные (0/1) | Хи-квадрат | Значимо |
+| **Game rounds** | Непрерывные (скошенные) | t-test | Не значимо |
 
 ---
 
-## 📈 Результаты
+## Результаты
 
 ### 1. Retention (возвращаемость)
 
 | День | gate_30 | gate_40 | Разница |
 |------|---------|---------|---------|
 | **День 1** | 44.82% | 44.23% | -0.59% |
-| **День 7** | **19.02%** | 18.20% | **-0.82%** ⭐ |
+| **День 7** | **19.02%** | 18.20% | **-0.82%** |
 
 **Retention Day 7 — статистически значимо (p = 0.0016)**
 <img width="862" height="562" alt="image" src="https://github.com/user-attachments/assets/099fd86e-a6ef-4a0f-9bed-ba85d012948f" />
@@ -75,18 +75,18 @@ A/B testing projects and data analysis portfolio
 
 ---
 
-## 🎯 Выводы
+## Выводы
 <img width="798" height="691" alt="image" src="https://github.com/user-attachments/assets/cacfa0c9-efbd-437b-86e9-2ca90e631937" />
 
 
-### ✅ Рекомендация: **Оставить gate_30**
+### Рекомендация: **Оставить gate_30**
 
 | За | Против |
 |----|--------|
-| ✅ Retention Day 7 выше на 0.82% | ❌ Нет значимого улучшения engagement |
-| ✅ Игровые раунды не ухудшились | |
-| ✅ Эффект стат. значимый (p < 0.01) | |
-| ✅ Выигрыш ≈ 740 пользователей | |
+| Retention Day 7 выше на 0.82% | Нет значимого улучшения engagement |
+| Игровые раунды не ухудшились | |
+| Эффект стат. значимый (p < 0.01) | |
+| Выигрыш ≈ 740 пользователей | |
 
 Благодарность: www.kaggle.com
 
